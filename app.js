@@ -1,0 +1,5 @@
+// variables(let, const, var)
+// strict equality operator (===)
+// strict inequality operator (!==)
+// loose equality operator (==)
+// loose inequality operator (!=)
