@@ -34,4 +34,35 @@ function sayHello(name) {
    }
    let answer = multipyNumbers(5,3);
    console.log(answer);
+
+//    arrow functions
+
+const functionName = (parameters) => {
+    // Function body
+  };
+
+  // Regular Function Expression
+function square(x) {
+    return x * x;
+  }
+  
+  // Arrow Function
+  const squareArrow = x => x * x;
+
+//   example
+  
+// Arrow Function
+const calculateRectangleAreaArrow = (length, width) => length * width;
+
+const length = 5;
+const width = 3;
+const area = calculateRectangleAreaArrow(length, width);
+console.log(`The area of the rectangle is: ${area}`); // Output: The area of the rectangle is: 15
+
+let perimeter = (leng, wid) => leng + wid + leng + wid;
+const leng = 5;
+const wid = 3;
+const addition = perimeter(leng, wid);
+console.log(`The perimeter of the rectangle is: ${addition}`);
+
   
