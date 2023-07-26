@@ -7,6 +7,8 @@
 // function declaration
 // function expression
 // calling a function
+// parameters and arguments
+// return statements
 function sayHello(name) {
     console.log(`Hello, ${name}!`);
   }
@@ -18,3 +20,12 @@ function sayHello(name) {
   }
   
   learn("Swahili")
+// a,b are parameters
+// 5,3 are the actual values
+  function addNumbers(a, b) {
+    return a + b;
+  }
+  
+  const result = addNumbers(5, 3);
+  console.log(result); // Output: 8
+  
