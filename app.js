@@ -28,4 +28,10 @@ function sayHello(name) {
   
   const result = addNumbers(5, 3);
   console.log(result); // Output: 8
+
+  function multipyNumbers(c,d) {
+    return  c * d;
+   }
+   let answer = multipyNumbers(5,3);
+   console.log(answer);
   
