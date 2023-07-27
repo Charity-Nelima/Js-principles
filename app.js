@@ -72,4 +72,33 @@ let r  = 3;
 const are = findArea(q,r);
 console.log(`area of rectangle is: ${are}`);
 
+// default parameters
+// You can set default values for function parameters,
+//  which are used if no arguments are passed or if the passed value is undefined.
+function greet(name = "Guest") {
+  console.log(`Hello, ${name}!`);
+}
+
+greet();       // Output: Hello, Guest!
+greet("John"); // Output: Hello, John!
+
+// Nested Functions:
+// Functions can be defined inside other functions, creating nested or inner functions.
+// example
+function outerFunction() {
+  console.log("This is the outer function.");
+
+  function innerFunction() {
+    console.log("This is the inner function.");
+  }
+
+  innerFunction();
+}
+
+outerFunction();
+// Output:
+// This is the outer function.
+// This is the inner function.
+
+
 
