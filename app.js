@@ -59,10 +59,17 @@ const width = 3;
 const area = calculateRectangleAreaArrow(length, width);
 console.log(`The area of the rectangle is: ${area}`); // Output: The area of the rectangle is: 15
 
-let perimeter = (leng, wid) => leng + wid + leng + wid;
+let perimeter = (leng, wid) => 2 * (leng + wid) ;
 const leng = 5;
 const wid = 3;
 const addition = perimeter(leng, wid);
 console.log(`The perimeter of the rectangle is: ${addition}`);
 
   
+const findArea = (q,r) => q * r ;
+let q  = 2;
+let r  = 3;
+const are = findArea(q,r);
+console.log(`area of rectangle is: ${are}`);
+
+
