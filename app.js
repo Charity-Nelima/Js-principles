@@ -132,6 +132,38 @@ const exponent = 3;
 const ans = Math.pow(base, exponent);
 console.log(ans); // Output: 8
 
+const message = "Hello, World!";
 
+// message.length gives the length of the string.
+console.log(message.length); // Output: 13
+
+// message.toLowerCase() converts the string to lowercase.
+console.log(message.toLowerCase()); // Output: hello, world!
+
+// message.toUpperCase() converts the string to uppercase.
+console.log(message.toUpperCase()); // Output: HELLO, WORLD!
+
+// message.includes() checks if a substring is present in the string.
+console.log(message.includes("World")); // Output: true
+
+// message.slice() extracts a portion of the string.
+console.log(message.slice(0, 5)); // Output: Hello
+
+// message.replace() replaces a substring with another string.
+console.log(message.replace("Hello", "Hi")); // Output: Hi, World!
+
+// arrays
+// Arrays are defined using square brackets [], and elements are separated by commas.
+const fruits = ["apple", "banana", "orange", "grape"];
+
+// strings
+
+// A string is a sequence of characters, used to represent text in JavaScript.
+// Strings are defined using single quotes ' ', double quotes " ", or backticks ` (template literals).
+// Strings are immutable, meaning their values
+// cannot be changed directly. However, you can create new strings based on existing ones.
+
+const trial = "Hey your honor, Chiraa Brian is innocent!";
+console.log(trial);
 
 
