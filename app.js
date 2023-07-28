@@ -113,6 +113,24 @@ const person = {
   }
   
 };
+// methods
+// Properties that contain functions are generally called methods
+//  of the value they belong to, as in “toUpperCase is a method of a string”.
+// example; push, pop
+// Math.random() generates a random number between 0 (inclusive) and 1 (exclusive).
+const randomNum = Math.random();
+console.log(randomNum);
+
+// Math.floor() rounds down to the nearest integer.
+const num = 4.8;
+const roundedNum = Math.floor(num);
+console.log(roundedNum); // Output: 4
+
+// Math.pow() raises a number to a specified power.
+const base = 2;
+const exponent = 3;
+const ans = Math.pow(base, exponent);
+console.log(ans); // Output: 8
 
 
 
