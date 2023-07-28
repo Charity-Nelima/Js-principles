@@ -100,5 +100,20 @@ outerFunction();
 // This is the outer function.
 // This is the inner function.
 
+// objects, arrays and Strings
+// An object is a composite data type that allows you to store multiple key-value pairs as properties
+// Objects are defined using curly braces {}.
+// example
+const person = {
+  name: "John",
+  age: 30,
+  isStudent: true,
+  sayHello: function() {
+    console.log(`Hello, my name is ${this.name}.`);
+  }
+  
+};
+
+
 
 
