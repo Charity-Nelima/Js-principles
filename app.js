@@ -167,3 +167,27 @@ const trial = "Hey your honor, Chiraa Brian is innocent!";
 console.log(trial);
 
 
+// Callback Function:
+// A callback function is simply a function that you define. It can take any number of parameters, 
+// depending on the context in which it will be used. 
+// The structure of a callback function is no different from any regular function.
+
+// Using a Callback Function:
+// When you have a function that performs some task and you want to execute 
+// additional code after that task is completed, you pass a callback function to that function as an argument. 
+// The function then calls the callback function at an appropriate time, usually after its main task is done.
+
+// Function that takes a number and a callback function
+function square(number, callback) {
+  const result = number * number;
+  // Call the callback function with the result
+  callback(result);
+}
+
+// Callback function that logs the result to the console
+function displayResult(result) {
+  console.log(`The result is: ${result}`);
+}
+
+// Call the square function with a number and the displayResult callback
+square(5, displayResult); // Output: The result is: 25
