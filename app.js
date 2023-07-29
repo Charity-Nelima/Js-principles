@@ -191,3 +191,23 @@ function displayResult(result) {
 
 // Call the square function with a number and the displayResult callback
 square(5, displayResult); // Output: The result is: 25
+
+
+// Why Use Callback Functions?
+// Callbacks enable you to write more flexible and modular code. They provide a way to define behavior dynamically, 
+// depending on different contexts or conditions. This promotes code reusability and separation of concerns.
+
+function higherOrderFunction(callback) {
+  // ... some code or asynchronous operation
+
+  // Call the callback function
+  callback();
+}
+
+// Define the callback function
+function callbackFunction() {
+  // ... custom behavior to be executed
+}
+
+// Call the higher-order function with the callback
+higherOrderFunction(callbackFunction);
