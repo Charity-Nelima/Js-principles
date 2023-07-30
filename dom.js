@@ -13,3 +13,27 @@
 //         - Text Node: "Hello, DOM!"
 //       - <p> (element node)
 //         - Text Node: "Welcome to my webpage."
+
+// Accessing DOM Elements:
+// In JavaScript, you can access DOM elements using various methods:
+
+// getElementById: This method selects an element by its unique id attribute.
+// getElementsByClassName: This method selects elements by their class names. It returns a collection of elements (HTMLCollection).
+// getElementsByTagName: This method selects elements by their tag names (e.g., "div", "p", "h1", etc.).
+// querySelector: This method allows you to select elements using CSS selectors. It returns the first matched element.
+// querySelectorAll: Similar to querySelector, but it returns a collection of all matched elements (NodeList).
+
+// Using getElementById
+const myDiv = document.getElementById("myDiv");
+
+// Using getElementsByClassName (returns a collection)
+const paragraphs = document.getElementsByClassName("paragraph");
+
+// Using getElementsByTagName (returns a collection)
+const pTags = document.getElementsByTagName("p");
+
+// Using querySelector (returns the first matched element)
+const firstParagraph = document.querySelector("p");
+
+// Using querySelectorAll (returns a collection)
+const allParagraphs = document.querySelectorAll("p");
