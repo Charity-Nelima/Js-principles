@@ -37,3 +37,11 @@ const firstParagraph = document.querySelector("p");
 
 // Using querySelectorAll (returns a collection)
 const allParagraphs = document.querySelectorAll("p");
+
+// Manipulating DOM Elements:
+// Once you've selected DOM elements, you can manipulate them in various ways:
+
+// Modifying Content: You can change the text content or HTML content of an element.
+// Changing Styles: You can update the CSS styles of elements to change their appearance.
+// Adding and Removing Elements: You can create new elements and add them to the DOM, or remove existing elements.
+// Event Handling: You can add event listeners to elements to respond to user interactions.
