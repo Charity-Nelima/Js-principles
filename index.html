@@ -3,9 +3,10 @@
     <!-- <p class="paragraph">Another paragraph.</p> -->
   </div>
   <script>
-    const manipulator = getElementsByClassName("paragraph");
-    paragraph.textContent = "New text content";
-    paragraph.innerHTML = "<p>New HTML content</>";
+    const manipulator = document.getElementsByClassName("paragraph");
+    for (let i = 0; i < manipulator.length; i++) {
+    // Change text content of each paragraph
+    manipulator[i].textContent = "New text content";}
 
   </script>
   <p>My ostrich Gertrude:</p>
