@@ -1,11 +1,30 @@
 <div id="myDiv">
     <p class="paragraph">This is a paragraph.</p>
-    <p class="paragraph">Another paragraph.</p>
+    <!-- <p class="paragraph">Another paragraph.</p> -->
   </div>
+  <script>
+    const manipulator = getElementsByClassName("paragraph");
+    paragraph.textContent = "New text content";
+    paragraph.innerHTML = "<p>New HTML content</>";
+
+  </script>
   <p>My ostrich Gertrude:</p>
 <p><img id="gertrude" src="img/ostrich.png"></p>
 
 <script>
   let ostrich = document.getElementById("gertrude");
   console.log(ostrich.src);
+</script>
+
+<p>One</p>
+<p>Two</p>
+<p>Three</p>
+
+<script>
+  let paragraphs = document.body.getElementsByTagName("p");
+  document.body.insertBefore(paragraphs[2], paragraphs[0]);
+
+  const nParagraph = document.createElement("p");
+  nParagraph.textContent = "A very new paragraph.";
+  document.body.appendChild(nParagraph);
 </script>
