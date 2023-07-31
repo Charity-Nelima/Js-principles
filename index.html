@@ -6,7 +6,9 @@
     const manipulator = document.getElementsByClassName("paragraph");
     for (let i = 0; i < manipulator.length; i++) {
     // Change text content of each paragraph
-    manipulator[i].textContent = "New text content";}
+    manipulator[i].textContent = "New text content";
+    // manipulator.innerHTML = "<p>New HTML content</p>";
+  }
 
   </script>
   <p>My ostrich Gertrude:</p>
@@ -28,4 +30,15 @@
   const nParagraph = document.createElement("p");
   nParagraph.textContent = "A very new paragraph.";
   document.body.appendChild(nParagraph);
+</script>
+
+<!-- styling when using DOM -->
+<p id="para" style="color: purple">
+  Nice text
+</p>
+
+<script>
+  let para = document.getElementById("para");
+  console.log(para.style.color);
+  para.style.color = "magenta";
 </script>
