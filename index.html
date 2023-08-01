@@ -44,4 +44,27 @@
 </script>
 
 <button id="myButton">Click Me</button></br>
-<button id="myButton">i am clicked</button>
+<!-- <button id="myButton">i am clicked</button> -->
+<script>
+
+  const button = document.getElementById("myButton");
+
+function handleClick() {
+  alert("Button Clicked!");
+}
+
+button.addEventListener("click", handleClick);
+</script>
+
+<button  id="form">submit</button>
+
+<script>
+
+  const formd = document.getElementById("form");
+  function handleClick() {
+  alert("Form Submitted!yeey!");
+}
+
+form.addEventListener("click", handleClick);
+
+</script>
