@@ -44,8 +44,8 @@
 </script>
 
 <button id="myButton">Click Me</button></br>
-<!-- <button id="myButton">i am clicked</button> -->
-<script>
+<button id="myButton">i am clicked</button> 
+ <script>
 
   const button = document.getElementById("myButton");
 
@@ -67,4 +67,22 @@ button.addEventListener("click", handleClick);
 
 form.addEventListener("click", handleClick);
 
+</script>
+
+<p>Click this document to activate the handler.</p>
+<script>
+  window.addEventListener("click", () => {
+    console.log("You knocked?");
+  });
+</script>
+
+The window binding refers to a built-in object provided by the browser. -->
+
+<button>Click me</button>
+<p>No handler here.</p>
+<script>
+  let buttonn = document.querySelector("button");
+  buttonn.addEventListener("click", () => {
+    console.log("Button clicked.");
+  });
 </script>
