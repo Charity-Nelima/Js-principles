@@ -45,3 +45,13 @@ const allParagraphs = document.querySelectorAll("p");
 // Changing Styles: You can update the CSS styles of elements to change their appearance.
 // Adding and Removing Elements: You can create new elements and add them to the DOM, or remove existing elements.
 // Event Handling: You can add event listeners to elements to respond to user interactions.
+
+
+let bombTimer = setTimeout(() => {
+    console.log("BOOM!");
+  }, 500);
+  
+  if (Math.random() < 0.5) { // 50% chance
+    console.log("Defused.");
+    clearTimeout(bombTimer);
+  }
