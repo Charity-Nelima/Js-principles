@@ -1,0 +1,37 @@
+<button>Act-once button</button>
+<script>
+  let button = document.querySelector("button");
+  function once() {
+    console.log("Done.");
+    button.removeEventListener("click", once);
+  }
+  button.addEventListener("click", once);
+</script>
+
+<div id="myDiv" style="width: 200px; height: 200px; background-color: blue;"></div>
+
+<script>
+  const myDiv = document.getElementById("myDiv");
+
+  myDiv.addEventListener("mousedown", () => {
+    myDiv.style.backgroundColor = "red";
+  });
+
+  myDiv.addEventListener("mouseup", () => {
+    myDiv.style.backgroundColor = "blue";
+  });
+</script>
+
+
+<!-- <p>A paragraph with a <button>button</button>.</p>
+<script>
+  let para = document.querySelector("p");
+  let button = document.querySelector("button");
+  para.addEventListener("mousedown", () => {
+    console.log("Handler for paragraph.");
+  });
+  button.addEventListener("mousedown", event => {
+    console.log("Handler for button.");
+    if (event.button == 2) event.stopPropagation();
+  });
+</script> -->
