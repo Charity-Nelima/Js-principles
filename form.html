@@ -1,0 +1,30 @@
+<form id="myForm">
+    <input type="text" id="username" name="username" /></br>
+    <input type="password" id="password" name="password" /></br>
+    <button type="submit">Submit</button>
+  </form>
+
+  <script>
+    
+
+const form = document.getElementById("myForm");
+const usernameInput = document.getElementById("username");
+const passwordInput = document.getElementById("password");
+
+form.addEventListener("submit", (event) => {
+    event.preventDefault(); // Prevent form submission
+  
+    const usernameValue = usernameInput.value.trim();
+    const passwordValue = passwordInput.value.trim();
+  
+    if (usernameValue === "" || passwordValue === "") {
+      alert("Please fill in all fields.");
+      return;
+    }
+    // elseif()
+  
+    // Perform further validation or submit the form to the server
+  });
+  
+  </script>
+  
