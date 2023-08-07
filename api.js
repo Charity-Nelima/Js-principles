@@ -38,3 +38,12 @@ fetch(apiUUrl)
     // Handle errors
     console.error("Error fetching data:", error);
   });
+
+//   In this example:
+
+// We define the apiUrl variable with the URL of the API endpoint.
+// We use the fetch function to make an HTTP GET request to the API URL.
+// We use the first .then() block to check if the response is OK (status code 200). If the response is not OK, we throw an error.
+// We use the .json() method on the response object to parse the JSON response body.
+// We use the second .then() block to process the parsed JSON data.
+// We use the .catch() block to handle errors, both network-related errors and parsing errors.
