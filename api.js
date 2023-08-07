@@ -15,3 +15,26 @@ fetch(apiUrl)
   .catch(error => {
     console.error("Error fetching weather data:", error);
   });
+
+  // a simple way of implementinng Api on javascript
+
+  // Define the API URL
+const apiUUrl = "https://jsonplaceholder.typicode.com/users";
+
+// Make the API request using fetch
+fetch(apiUUrl)
+  .then(response => {
+    // Check if the response status is OK (200)
+    if (!response.ok) {
+      throw new Error("Network response was not ok");
+    }
+    return response.json(); // Parse the response body as JSON
+  })
+  .then(data => {
+    // Process the data
+    console.log("API response:", data);
+  })
+  .catch(error => {
+    // Handle errors
+    console.error("Error fetching data:", error);
+  });
