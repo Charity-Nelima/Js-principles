@@ -55,3 +55,16 @@ let bombTimer = setTimeout(() => {
     console.log("Defused.");
     clearTimeout(bombTimer);
   }
+
+//   import and export
+// Default Export:
+
+// You can also use a default export to export a single value as the default export of a module.
+// There can be only one default export per module.
+// When importing a default export, you can use any name you want.
+// Example:
+// javascript
+// Copy code
+// myModule.js
+const myData = 42;
+export default myData;
