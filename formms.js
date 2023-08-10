@@ -14,3 +14,18 @@ document.getElementById("myForm").addEventListener("submit", function(event) {
     // Your code to handle form data
   });
   
+  document.getElementById("myForm").addEventListener("submit", function(event) {
+    event.preventDefault();
+  
+    const formData = new FormData(event.target);
+    const name = formData.get("name");
+    const email = formData.get("email");
+  
+    if (name.trim() === "" || email.trim() === "") {
+      alert("Please fill out all fields.");
+      return;
+    }
+  
+    // Your code to process valid form data
+  });
+  
