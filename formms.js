@@ -29,3 +29,22 @@ document.getElementById("myForm").addEventListener("submit", function(event) {
     // Your code to process valid form data
   });
   
+
+  document.getElementById("myForm").addEventListener("submit", function(event) {
+    event.preventDefault();
+  
+    const formData = new FormData(event.target);
+  
+    fetch("your-server-url", {
+      method: "POST",
+      body: formData
+    })
+    .then(response => response.json())
+    .then(data => {
+      // Handle server response
+    })
+    .catch(error => {
+      console.error("Error:", error);
+    });
+  });
+  
