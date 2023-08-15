@@ -1,11 +1,11 @@
 {
   "dependencies": {
-    "ini": "^4.1.1"
+    "ini": "^4.1.1",
+    "mime": "^2.2.0"
   },
   "name": "js-principles",
   "version": "1.0.0",
   "main": "api.js",
-  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
