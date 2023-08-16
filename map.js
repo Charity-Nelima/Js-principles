@@ -1,0 +1,2 @@
+// In JavaScript, "mapping" typically refers to the process of transforming elements in an array using a provided function to produce a new array with the transformed elements. 
+// The map() method is a powerful tool for achieving this transformation. 
