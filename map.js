@@ -16,3 +16,11 @@ const numberss = [1, 2, 3, 4, 5];
 const squaredNumberss = numberss.map(number => number * number);
 
 console.log(squaredNumberss); // [1, 4, 9, 16, 25]
+
+// example 2
+const names = ['kiarie', 'hansen', 'charity', 'nelima'];
+
+const capitalizedNames = names.map(name => name.charAt(0).toUpperCase() + name.slice(1));
+
+console.log(capitalizedNames); 
+
