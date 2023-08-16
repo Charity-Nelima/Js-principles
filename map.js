@@ -8,3 +8,11 @@ const squaredNumbers = numbers.map(function(number) {
 });
 
 console.log(squaredNumbers);
+
+// or when using arrow function
+
+const numberss = [1, 2, 3, 4, 5];
+
+const squaredNumberss = numberss.map(number => number * number);
+
+console.log(squaredNumberss); // [1, 4, 9, 16, 25]
