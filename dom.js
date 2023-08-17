@@ -68,3 +68,4 @@ let bombTimer = setTimeout(() => {
 // myModule.js
 const myData = 42;
 export default myData;
+
