@@ -31,3 +31,12 @@ console.log('End');
 // Start
 // End
 // Middle
+
+// Promises and async/await:
+// JavaScript introduced promises and later the async/await syntax to simplify asynchronous programming.
+
+// Promises: Promises provide a cleaner way to handle asynchronous operations using chained .then() methods to handle success and error cases.
+
+// async/await: async functions are a modern way to write asynchronous code that looks more like synchronous code.
+//  await is used within
+//  an async function to pause the execution until a promise is resolved or rejected.
