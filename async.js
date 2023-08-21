@@ -40,3 +40,16 @@ console.log('End');
 // async/await: async functions are a modern way to write asynchronous code that looks more like synchronous code.
 //  await is used within
 //  an async function to pause the execution until a promise is resolved or rejected.
+
+async function fetchData() {
+    try {
+      const response = await fetch('https://api.example.com/data');
+      const data = await response.json();
+      console.log(data);
+    } catch (error) {
+      console.error('Error:', error);
+    }
+  }
+  
+  fetchData();
+  
