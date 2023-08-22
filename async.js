@@ -52,4 +52,33 @@ async function fetchData() {
   }
   
   fetchData();
+
+  // using static method;
+
+  class MyClass {
+    static staticProperty = 'I am a static property';
+  
+    static staticMethod() {
+      console.log('I am a static method');
+    }
+  
+    constructor(instanceProperty) {
+      this.instanceProperty = instanceProperty;
+    }
+  
+    instanceMethod() {
+      console.log('I am an instance method');
+    }
+  }
+  
+  // Accessing static property and method
+  console.log(MyClass.staticProperty); // "I am a static property"
+  MyClass.staticMethod(); // "I am a static method"
+  
+  // Creating an instance of MyClass
+  const instance = new MyClass('Instance property value');
+  
+  // Accessing instance property and method
+  console.log(instance.instanceProperty); // "Instance property value"
+  instance.instanceMethod(); // "I am an instance method"
   
