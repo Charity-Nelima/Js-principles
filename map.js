@@ -24,4 +24,13 @@ const capitalizedNames = names.map(name => name.charAt(0).toUpperCase() + name.s
 
 console.log(capitalizedNames); 
 
+// chaining array methods
+
+const nubers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+const evenSquares = nubers
+  .filter(number => number % 2 === 0)
+  .map(evenNumber => evenNumber * evenNumber);
+
+console.log(evenSquares); // [4, 16, 36, 64, 100]
 
