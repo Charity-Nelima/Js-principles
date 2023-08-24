@@ -11,3 +11,8 @@ addButton.addEventListener('click', () => {
   // Append the new paragraph to the content div
   contentDiv.appendChild(newParagraph);
 });
+
+
+// Apply styling to the new paragraph
+newParagraph.style.color = 'blue';
+newParagraph.style.fontWeight = 'bold';
